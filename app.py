@@ -87,7 +87,7 @@ def calcular_margem_erro(valor_real, valor_simulado):
     return round(margem_percentual, 2)
 
 st.set_page_config(
-    page_title="Calculadora CEF - Muca", 
+    page_title="Calculadora de Financiamento - Muca", 
     layout="wide",
     initial_sidebar_state="collapsed"
 )
@@ -174,8 +174,8 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.title("🏠 Calculadora de financiamento terreno construção CEF")
-st.markdown("**Desenvolvido por Muca** - Sistema SAC com parâmetros CEF 2024")
+st.title("🏠 Calculadora de Financiamento Imóvel Novo/Usado e Terreno + Construção - SBPE (TR) - Taxa Balcão")
+st.markdown("**Desenvolvido por Muca - Corretor de Imóveis** - Sistema SAC/TR com parâmetros atualizados 2025")
 
 st.markdown("---")
 
@@ -401,18 +401,18 @@ st.markdown("---")
 
 # Disclaimer importante
 st.warning("""
-⚠️ **Importante:** Esta é uma simulação baseada nos parâmetros gerais da CEF.  
+⚠️ **Importante:** Esta é uma simulação baseada nos parâmetros do sistema SBPE (TR) com taxa balcão.  
 Os valores finais podem variar conforme análise de crédito, localização do imóvel e condições específicas.  
-**Consulte sempre uma agência da CEF para informações oficiais.**
+**Consulte sempre uma instituição financeira para informações oficiais.**
 """)
 
 # Informações do desenvolvedor
 st.markdown("""
 <div style="text-align: center; padding: 1rem; background-color: #f8f9fa; border-radius: 8px; margin-top: 1rem;">
     <small>
-        <strong>📱 Desenvolvido por:</strong> Muca<br>
-        <strong>🏦 Baseado em:</strong> Parâmetros CEF 2024<br>
-        <strong>⚙️ Sistema:</strong> SAC (Sistema de Amortização Constante)
+        <strong>📱 Desenvolvido por:</strong> Muca - Corretor de Imóveis<br>
+        <strong>🏦 Sistema:</strong> SBPE (TR) - Taxa Balcão 2025<br>
+        <strong>⚙️ Amortização:</strong> SAC (Sistema de Amortização Constante)
     </small>
 </div>
 """, unsafe_allow_html=True)
